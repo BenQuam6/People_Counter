@@ -10,51 +10,43 @@
         android:id="@+id/Counter"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginTop="136dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/addButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/addButton"
         android:layout_width="125dp"
         android:layout_height="55dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="40dp"
         android:text="Add"
         app:layout_constraintBottom_toTopOf="@+id/subtractButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Counter" />
+        app:layout_constraintEnd_toEndOf="@+id/Counter"
+        app:layout_constraintStart_toStartOf="@+id/Counter" />
 
     <Button
         android:id="@+id/subtractButton"
         android:layout_width="125dp"
         android:layout_height="55dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginBottom="191dp"
+        android:layout_marginTop="100dp"
         android:text="Subtract"
-        app:layout_constraintBottom_toTopOf="@+id/resetButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addButton" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Counter"
+        app:layout_constraintStart_toStartOf="@+id/Counter"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/resetButton"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="48dp"
         android:text="Reset"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/subtractButton"
+        app:layout_constraintStart_toStartOf="@+id/subtractButton"
         app:layout_constraintTop_toBottomOf="@+id/subtractButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

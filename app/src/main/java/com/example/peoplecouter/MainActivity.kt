@@ -22,18 +22,22 @@ class MainActivity : AppCompatActivity() {
             timesClicked += 1
 
             counter.text = timesClicked.toString()
+            Toast.makeText(this,"Count Added", Toast.LENGTH_SHORT).show()
         }
 
         btnClickMeS.setOnClickListener{
             timesClicked -= 1
 
             counter.text = timesClicked.toString()
+            Toast.makeText(this,"Count Removed", Toast.LENGTH_SHORT).show()
         }
 
         btnClickMeR.setOnClickListener{
             timesClicked = 0
 
             counter.text = timesClicked.toString()
+
+            Toast.makeText(this,"Count Rest", Toast.LENGTH_SHORT).show()
         }
 
     }
